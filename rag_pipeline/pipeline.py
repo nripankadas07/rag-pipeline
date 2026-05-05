@@ -88,9 +88,7 @@ class Pipeline:
         context_parts = []
         for i, r in enumerate(results, 1):
             context_parts.append(f"[{i}] (score: {r.score:.3f}) {r.text}")
-        context = "
-
-".join(context_parts)
+        context = "\n\n".join(context_parts)
 
         return RetrievalResult(
             query=question,
