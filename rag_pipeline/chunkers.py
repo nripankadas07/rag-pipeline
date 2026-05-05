@@ -124,10 +124,7 @@ class RecursiveChunker(BaseChunker):
     a cleaner implementation. Tries paragraph → sentence → word boundaries.
     """
 
-    DEFAULT_SEPARATORS = ["
-
-", "
-", ". ", " ", ""]
+    DEFAULT_SEPARATORS = ["\n\n", "\n", ". ", " ", ""]
 
     def __init__(
         self,
